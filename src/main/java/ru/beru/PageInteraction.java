@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.testng.annotations.*;
 
-import java.util.Date;
 
 public class PageInteraction {
     public ChromeDriver driver;
