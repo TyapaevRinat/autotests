@@ -1,19 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="TestSuite">
-    <test name="Login">
+    <test name="LoginTest">
         <classes>
             <class name="ru.beru.FirstTest" />
         </classes>
     </test>
-    <!--    <test name="ChangeCityTest">-->
-    <!--        <parameter name="cityName" value="Хвалынск"/>-->
-    <!--        <classes>-->
-    <!--            <class name="my_tests.Test2" />-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test name="Choose">-->
-    <!--        <classes>-->
-    <!--            <class name="my_tests.Test3" />-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="CityChangeTest">
+        <classes>
+            <class name="ru.beru.SecondTest" />
+        </classes>
+    </test>
+    <test name="PickAndPurchaseTest">
+        <classes>
+            <class name="ru.beru.ThirdTest" />
+        </classes>
+    </test>
 </suite>
