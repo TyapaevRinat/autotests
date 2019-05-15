@@ -25,7 +25,8 @@ public class MainPage extends Preset {
 
     @Step("User email check")
     public void checkProfileChanged() {
-        String name = driver.findElement(By.cssSelector(".header2-nav__user .header2-nav-item__text")).getAttribute("innerHTML");
+        String name = driver.findElement(By.cssSelector(".header2-nav__user .header2-nav-item__text"))
+                .getAttribute("innerHTML");
         Assert.assertEquals("Мой профиль", name);
     }
 
