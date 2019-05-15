@@ -29,12 +29,6 @@ public class MainPage extends Preset {
         Assert.assertEquals("Мой профиль", name);
     }
 
-    @Step("Profile text changed check")
-    public void checkTextOnAccountInfoButton() {
-        WebElement textButtonUser = giveAccountInfoButton().findElement(By.cssSelector("[class*='__text']"));
-        Assert.assertEquals(textButtonUser.getAttribute("textContent"), "Мой профиль");
-    }
-
     private WebElement findCurrentCity() {
         return driver.findElement(By.cssSelector("[class*='__region'] [class*='__inner']"));
     }

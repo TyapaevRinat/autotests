@@ -12,7 +12,6 @@ public class FirstTest extends Preset {
         LoginPage loginPage = mainPage.clickButtonAccount();
         loginPage.enterLogin("sampletext11");
         loginPage.enterPassword("sampletext1101");
-        mainPage.checkTextOnAccountInfoButton();
         mainPage.checkProfileChanged();
     }
 }
