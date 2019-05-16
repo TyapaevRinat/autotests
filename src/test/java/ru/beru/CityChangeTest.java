@@ -17,7 +17,7 @@ public class CityChangeTest extends Preset {
     }
 
     @Test(dataProvider="SearchProvider")
-    public void cityChangeTest(String cityName) {
+    public void secondTest(String cityName) {
         MainPage page = new MainPage();
         page.clickCityInner();
         page.changeCityName(cityName);
