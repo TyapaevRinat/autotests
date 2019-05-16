@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 @Listeners(TestListener.class)
 
-public class ThirdTest extends Preset{
+public class PurchaseTest extends Preset{
     @Test
     public void thirdTest() {
         MainPage page = new MainPage();

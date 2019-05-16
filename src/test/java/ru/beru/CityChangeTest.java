@@ -5,7 +5,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners(TestListener.class)
-public class SecondTest extends Preset {
+public class CityChangeTest extends Preset {
     @DataProvider(name="SearchProvider")
     public Object[][] getDataFromDataprovider(){
         return new Object[][]

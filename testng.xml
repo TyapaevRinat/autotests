@@ -2,17 +2,17 @@
 <suite name="TestSuite">
     <test name="LoginTest">
         <classes>
-            <class name="ru.beru.FirstTest" />
+            <class name="ru.beru.LoginTest" />
         </classes>
     </test>
     <test name="CityChangeTest">
         <classes>
-            <class name="ru.beru.SecondTest" />
+            <class name="ru.beru.CityChangeTest" />
         </classes>
     </test>
     <test name="PickAndPurchaseTest">
         <classes>
-            <class name="ru.beru.ThirdTest" />
+            <class name="ru.beru.PurchaseTest" />
         </classes>
     </test>
 </suite>
