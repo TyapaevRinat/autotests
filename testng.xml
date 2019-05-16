@@ -15,4 +15,9 @@
             <class name="ru.beru.PurchaseTest" />
         </classes>
     </test>
+    <test name="AdditionalTest">
+        <classes>
+            <class name="ru.beru.AdditionalTest" />
+        </classes>
+    </test>
 </suite>

@@ -79,4 +79,28 @@ public class MainPage extends Preset {
         searchField.sendKeys(item);
         searchField.sendKeys(Keys.ENTER);
     }
+
+    @Step("Subscribe button press")
+    public void subscribeInit() {
+        WebElement btn = driver.findElement(By.cssSelector("[class*='THqSbzx07u'] [class*='_2w0qPDYwej']"));
+        btn.click();
+    }
+
+    @Step("Subscription email input")
+    public void inputEmail(String email){
+        WebElement mailBox = driver.findElement(By.cssSelector("._2CaNYhWZT5"));
+        mailBox.sendKeys(email);
+    }
+
+    @Step("Submit subscription button press")
+    public void submit(){
+        WebElement submitBtn = driver.findElement(By.cssSelector("[class*='_3OWdR9kZRH'] [class*='_2w0qPDYwej']"));
+        submitBtn.click();
+    }
+
+    @Step("No email message check")
+    public void checkNoMail(){
+        WebElement text = driver.findElement(By.cssSelector(".W-B6JRTjJH"));
+        Assert.assertEquals(text.isDisplayed(), true);
+    }
 }

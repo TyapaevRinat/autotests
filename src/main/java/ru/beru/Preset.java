@@ -33,7 +33,7 @@ public class Preset {
         System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
-        options.addArguments("start-fullscreen");
+        //options.addArguments("start-fullscreen");
         driver = new ChromeDriver(options);
         screen = new ScreenTaker(driver, SCREEN_PATH);
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
