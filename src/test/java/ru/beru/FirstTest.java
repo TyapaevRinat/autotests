@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class FirstTest extends Preset {
 
     @Test
-    public void first_test() {
+    public void firstTest() {
         MainPage mainPage = new MainPage();
         LoginPage loginPage = mainPage.clickButtonAccount();
         loginPage.enterLogin("sampletext11");

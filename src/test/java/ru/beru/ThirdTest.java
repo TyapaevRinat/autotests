@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ThirdTest extends Preset{
     @Test
-    public void third_test() {
+    public void thirdTest() {
         MainPage page = new MainPage();
         page.findItem("Электрические зубные щетки");
         SearchPage searchPage = new SearchPage();
