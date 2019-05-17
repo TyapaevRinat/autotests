@@ -103,4 +103,10 @@ public class MainPage extends Preset {
         WebElement text = driver.findElement(By.cssSelector(".W-B6JRTjJH"));
         Assert.assertEquals(text.isDisplayed(), true);
     }
+    
+    @Step("Subscription check")
+    public void checkDone(){
+        WebElement text = driver.findElement(By.cssSelector("[class*='iPXnD_xnpC'] [class*='_1DYZjT8fnu']"));
+        Assert.assertEquals(text.getAttribute("innerHTML").contains("Готово!"), true);
+    }
 }
