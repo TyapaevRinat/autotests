@@ -15,5 +15,6 @@ public class AdditionalTest extends Preset {
         page.checkNoMail();
         page.inputEmail("sampletext11@yandex.ru");
         page.submit();
+        page.checkDone();
     }
 }
